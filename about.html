@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me – Ali Abdi</title>
-
 <style>
 /* ================= RESET ================= */
 *{
@@ -61,8 +60,6 @@ nav ul li a.active{
   overflow:hidden;
   background:linear-gradient(135deg,#ffffff,#f2f6ff);
 }
-
-/* Animated background */
 .hero-bg{
   position:absolute;
   inset:0;
@@ -77,7 +74,6 @@ nav ul li a.active{
   50%{transform:translate(-20px,20px)}
   100%{transform:translate(0,0)}
 }
-
 .hero-container{
   position:relative;
   z-index:2;
@@ -89,7 +85,6 @@ nav ul li a.active{
   gap:3rem;
   align-items:center;
 }
-
 .hero-badge{
   display:inline-block;
   padding:.4rem 1rem;
@@ -100,7 +95,6 @@ nav ul li a.active{
   color:white;
   margin-bottom:1.2rem;
 }
-
 .hero-text h1{
   font-size:3.1rem;
   line-height:1.15;
@@ -111,7 +105,6 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .hero-text p{
   font-size:1.1rem;
   line-height:1.8;
@@ -119,7 +112,6 @@ nav ul li a.active{
   opacity:.85;
   margin-bottom:2rem;
 }
-
 .hero-actions{
   display:flex;
   gap:1rem;
@@ -148,7 +140,6 @@ nav ul li a.active{
   background:#4facfe;
   color:white;
 }
-
 .hero-visual{
   display:flex;
   justify-content:center;
@@ -184,7 +175,6 @@ nav ul li a.active{
   gap:4rem;
   align-items:center;
 }
-
 .story-label{
   display:inline-block;
   margin-bottom:1rem;
@@ -195,7 +185,6 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .story-left h2{
   font-size:2.6rem;
   margin-bottom:1.5rem;
@@ -205,7 +194,6 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .story-left p{
   font-size:1.05rem;
   line-height:1.8;
@@ -213,7 +201,6 @@ nav ul li a.active{
   margin-bottom:1.2rem;
   max-width:520px;
 }
-
 .story-stats{
   margin-top:2.5rem;
   display:flex;
@@ -229,7 +216,6 @@ nav ul li a.active{
   font-size:.85rem;
   opacity:.7;
 }
-
 /* TIMELINE */
 .timeline{
   position:relative;
@@ -261,142 +247,11 @@ nav ul li a.active{
 }
 .timeline-item.highlight span{color:#ffd700}
 
-
-/* ===== FOOTER BASE ===== */
-.footer {
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
-  color: #fff;
-  padding-top: 4rem;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Soft background glow */
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(79,172,254,0.25), transparent 70%);
-  top: -150px;
-  left: -150px;
-}
-
-/* ===== LAYOUT ===== */
-.footer-wrapper {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr;
-  gap: 3rem;
-  position: relative;
-  z-index: 2;
-}
-
-/* ===== BRAND ===== */
-.footer-brand h2 {
-  font-size: 2.2rem;
-  background: linear-gradient(90deg, #ffd700, #4facfe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.footer-brand p {
-  margin-top: 1rem;
-  line-height: 1.8;
-  color: rgba(255,255,255,0.85);
-  max-width: 420px;
-}
-
-/* ===== NAV ===== */
-.footer-nav h4,
-.footer-contact h4 {
-  margin-bottom: 1rem;
-  color: #ffd700;
-  letter-spacing: 1px;
-}
-
-.footer-nav a {
-  display: block;
-  color: rgba(255,255,255,0.85);
-  text-decoration: none;
-  margin-bottom: 0.7rem;
-  transition: 0.3s;
-}
-
-.footer-nav a:hover {
-  color: #4facfe;
-  transform: translateX(6px);
-}
-
-/* ===== CONTACT ===== */
-.footer-contact p {
-  margin-bottom: 0.7rem;
-  color: rgba(255,255,255,0.85);
-}
-
-.footer-contact span {
-  color: #4facfe;
-}
-
-/* ===== SOCIAL ===== */
-.footer-social {
-  margin-top: 1.2rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-social a {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.12);
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0.35s;
-}
-
-.footer-social a:hover {
-  background: #ffd700;
-  color: #1e3a8a;
-  transform: translateY(-5px) scale(1.05);
-}
-
-/* ===== BOTTOM ===== */
-.footer-bottom {
-  margin-top: 3.5rem;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.7);
-  border-top: 1px solid rgba(255,255,255,0.15);
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-  .footer-wrapper {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-brand p {
-    margin: auto;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-}
 /* ================= WHAT I DO ================= */
 .what-i-do{
   padding:6rem 2rem;
   background:linear-gradient(180deg,#ffffff,#f6f9ff);
 }
-
 .what-container{
   max-width:1200px;
   margin:auto;
@@ -405,7 +260,6 @@ nav ul li a.active{
   gap:4rem;
   align-items:center;
 }
-
 .section-tag{
   display:inline-block;
   padding:.4rem 1rem;
@@ -416,7 +270,6 @@ nav ul li a.active{
   color:white;
   margin-bottom:1rem;
 }
-
 .what-intro h2{
   font-size:2.8rem;
   line-height:1.2;
@@ -427,21 +280,17 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .what-intro p{
   font-size:1.1rem;
   line-height:1.8;
   opacity:.85;
   max-width:480px;
 }
-
-/* Services list */
 .what-services{
   display:flex;
   flex-direction:column;
   gap:1.5rem;
 }
-
 .service-line{
   display:flex;
   align-items:flex-start;
@@ -454,7 +303,6 @@ nav ul li a.active{
   position:relative;
   overflow:hidden;
 }
-
 .service-line::before{
   content:"";
   position:absolute;
@@ -464,15 +312,12 @@ nav ul li a.active{
   transition:.4s;
   z-index:0;
 }
-
 .service-line:hover::before{
   opacity:.08;
 }
-
 .service-line:hover{
   transform:translateX(10px);
 }
-
 .service-line .icon{
   font-size:1.8rem;
   width:55px;
@@ -487,11 +332,9 @@ nav ul li a.active{
   box-shadow:0 10px 20px rgba(26,115,232,.4);
   z-index:1;
 }
-
 .service-line .text{
   z-index:1;
 }
-
 .service-line h3{
   font-size:1.3rem;
   margin-bottom:.4rem;
@@ -499,48 +342,22 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .service-line p{
   font-size:.95rem;
   opacity:.85;
   line-height:1.6;
 }
 
-/* Responsive */
-@media(max-width:900px){
-  .what-container{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-  .what-intro p{
-    margin:auto;
-  }
-  .service-line{
-    text-align:left;
-  }
-}
+/* ================= TESTIMONIALS ================= */
 .testimonials-modern{
   padding:6rem 2rem;
   background:linear-gradient(180deg,#ffffff,#f0f8ff);
 }
-
 .testimonials-modern .container{
   max-width:1200px;
   margin:auto;
   text-align:center;
 }
-
-.testimonials-modern .section-tag{
-  display:inline-block;
-  padding:.4rem 1rem;
-  border-radius:50px;
-  font-size:.85rem;
-  font-weight:600;
-  background:linear-gradient(90deg,#ff7a18,#4facfe);
-  color:white;
-  margin-bottom:1rem;
-}
-
 .testimonials-modern h2{
   font-size:2.7rem;
   margin-bottom:3rem;
@@ -550,13 +367,11 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .testi-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:2.5rem;
 }
-
 .testi-card{
   background:white;
   border-radius:20px;
@@ -568,17 +383,14 @@ nav ul li a.active{
   opacity:0;
   transform:translateY(40px);
 }
-
 .testi-card.highlight{
   border:3px solid #4facfe;
   box-shadow:0 25px 50px rgba(26,115,232,.15);
 }
-
 .testi-card:hover{
   transform:translateY(-10px);
   box-shadow:0 25px 50px rgba(0,0,0,.12);
 }
-
 .quote-icon{
   font-size:3rem;
   color:#4facfe;
@@ -586,32 +398,23 @@ nav ul li a.active{
   top:-10px;
   right:15px;
 }
-
 .testi-card p{
   font-size:1rem;
   line-height:1.6;
   margin-bottom:1rem;
   opacity:.85;
 }
-
 .testi-card h4{
   font-weight:600;
   color:#1a73e8;
 }
-
-/* Animations */
 .testi-card.show{
   opacity:1;
   transform:translateY(0);
   transition:transform .6s ease, opacity .6s ease;
 }
 
-/* Responsive */
-@media(max-width:900px){
-  .testi-grid{
-    grid-template-columns:1fr;
-  }
-}
+/* ================= FUN FACTS ================= */
 .fun-facts{
   padding:6rem 2rem;
   background:linear-gradient(180deg,#f9faff,#ffffff);
@@ -619,7 +422,6 @@ nav ul li a.active{
   position:relative;
   overflow:hidden;
 }
-
 .fun-facts::before{
   content:"";
   position:absolute;
@@ -649,25 +451,12 @@ nav ul li a.active{
   50%{transform:translate(20px,20px) rotate(20deg);}
   100%{transform:translate(0,0) rotate(0deg);}
 }
-
 .fun-facts .container{
   max-width:1200px;
   margin:auto;
   position:relative;
   z-index:2;
 }
-
-.fun-facts .section-tag{
-  display:inline-block;
-  padding:.5rem 1.2rem;
-  border-radius:50px;
-  font-size:.85rem;
-  font-weight:600;
-  background:linear-gradient(90deg,#ff7a18,#4facfe);
-  color:white;
-  margin-bottom:1rem;
-}
-
 .fun-facts h2{
   font-size:2.8rem;
   margin-bottom:4rem;
@@ -677,13 +466,11 @@ nav ul li a.active{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .facts-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:2.5rem;
 }
-
 .fact-card{
   background:white;
   border-radius:25px;
@@ -696,67 +483,169 @@ nav ul li a.active{
   position:relative;
   overflow:hidden;
 }
-
 .fact-card.highlight{
   background:linear-gradient(135deg,#4facfe,#1a73e8);
   color:white;
 }
-
 .fact-card .icon{
   font-size:2.5rem;
   margin-bottom:1rem;
   display:inline-block;
   animation:iconPop 1.2s ease forwards;
 }
-
 @keyframes iconPop{
   0%{transform:scale(0);}
   100%{transform:scale(1);}
 }
-
 .fact-card h3{
   font-size:3rem;
   margin-bottom:.5rem;
   color:#1a73e8;
   transition:.3s;
 }
-
 .fact-card.highlight h3{
   color:white;
 }
-
 .fact-card p{
   font-weight:600;
   opacity:.85;
   font-size:1rem;
 }
-
-/* Hover Effect */
 .fact-card:hover{
   transform:translateY(-12px);
   box-shadow:0 35px 60px rgba(0,0,0,.12);
 }
-
-/* Show animation */
 .fact-card.show{
   opacity:1;
   transform:translateY(0);
   transition:all .8s ease;
 }
 
-/* Responsive */
-@media(max-width:900px){
-  .facts-grid{
-    grid-template-columns:1fr;
-  }
+/* ================= FOOTER ================= */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+  padding-top: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(79,172,254,0.25), transparent 70%);
+  top: -150px;
+  left: -150px;
+}
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+}
+.footer-brand h2 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #ffd700, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-brand p {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+  max-width: 420px;
+}
+.footer-nav h4,
+.footer-contact h4 {
+  margin-bottom: 1rem;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+.footer-nav a {
+  display: block;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  transition: 0.3s;
+}
+.footer-nav a:hover {
+  color: #4facfe;
+  transform: translateX(6px);
+}
+.footer-contact p {
+  margin-bottom: 0.7rem;
+  color: rgba(255,255,255,0.85);
+}
+.footer-contact span {
+  color: #4facfe;
+}
+.footer-social {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+}
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.35s;
+}
+.footer-social a:hover {
+  background: #ffd700;
+  color: #1e3a8a;
+  transform: translateY(-5px) scale(1.05);
+}
+.footer-bottom {
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 
-
+/* ================= RESPONSIVE ================= */
+@media (max-width:1200px){
+  .hero-container{grid-template-columns:1fr;}
+  .story-container{grid-template-columns:1fr;}
+  .what-container{grid-template-columns:1fr;}
+}
+@media (max-width:900px){
+  nav ul{flex-direction:column; gap:1rem;}
+  .hero-text h1{font-size:2.4rem;}
+  .story-stats{flex-direction:column; gap:1rem;}
+  .story-left p{margin-bottom:1rem;}
+  .timeline{padding-left:0;}
+  .timeline-item{margin-left:0;}
+}
+@media (max-width:600px){
+  .hero-text p{font-size:1rem;}
+  .hero-actions{flex-direction:column; gap:.7rem;}
+  .hero-visual{margin-top:2rem;}
+  .what-intro h2{font-size:2rem;}
+  .what-intro p{max-width:100%; margin:auto;}
+  .service-line{flex-direction:column; align-items:center; text-align:center;}
+  .service-line .text{margin-top:1rem;}
+  .testimonials-modern h2{font-size:2rem;}
+  .fun-facts h2{font-size:2rem;}
+  .fact-card h3{font-size:2.2rem;}
+}
 </style>
 </head>
-
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="logo">Ali Abdi</div>
   <ul>
@@ -767,6 +656,7 @@ nav ul li a.active{
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-container">
@@ -787,6 +677,7 @@ nav ul li a.active{
   </div>
 </section>
 
+<!-- STORY -->
 <section class="story">
   <div class="story-container">
     <div class="story-left">
@@ -806,138 +697,71 @@ nav ul li a.active{
     </div>
   </div>
 </section>
+
+<!-- WHAT I DO -->
 <section class="what-i-do">
   <div class="what-container">
-
     <div class="what-intro">
       <span class="section-tag">What I Do</span>
       <h2>Crafting <span>Digital Experiences</span> That Matter</h2>
-      <p>
-        I combine creativity, strategy, and technology to design and build
-        modern digital solutions that help people and businesses grow online.
-      </p>
+      <p>I combine creativity, strategy, and technology to design and build modern digital solutions that help people and businesses grow online.</p>
     </div>
-
     <div class="what-services">
-
       <div class="service-line">
         <div class="icon">🎨</div>
-        <div class="text">
-          <h3>Graphic Design</h3>
-          <p>Visual identities, social media graphics, and creative assets with strong branding.</p>
-        </div>
+        <div class="text"><h3>Graphic Design</h3><p>Visual identities, social media graphics, and creative assets with strong branding.</p></div>
       </div>
-
       <div class="service-line">
         <div class="icon">💻</div>
-        <div class="text">
-          <h3>Web Development</h3>
-          <p>Fast, responsive, and modern websites built with clean and scalable code.</p>
-        </div>
+        <div class="text"><h3>Web Development</h3><p>Fast, responsive, and modern websites built with clean and scalable code.</p></div>
       </div>
-
       <div class="service-line">
         <div class="icon">🌐</div>
-        <div class="text">
-          <h3>WordPress Development</h3>
-          <p>Custom WordPress sites that are easy to manage and optimized for growth.</p>
-        </div>
+        <div class="text"><h3>WordPress Development</h3><p>Custom WordPress sites that are easy to manage and optimized for growth.</p></div>
       </div>
-
       <div class="service-line">
         <div class="icon">🖥️</div>
-        <div class="text">
-          <h3>Computer Basics Training</h3>
-          <p>Practical training to help beginners confidently use computers and software.</p>
-        </div>
+        <div class="text"><h3>Computer Basics Training</h3><p>Practical training to help beginners confidently use computers and software.</p></div>
       </div>
-
     </div>
   </div>
 </section>
+
+<!-- TESTIMONIALS -->
 <section class="testimonials-modern">
   <div class="container">
     <span class="section-tag">Testimonials</span>
     <h2>Clients <span>Love</span> My Work</h2>
-
     <div class="testi-grid">
-      <div class="testi-card">
-        <div class="quote-icon">❝</div>
-        <p>"Ali transformed our website with a modern, clean design. Our traffic increased dramatically!"</p>
-        <h4>- Sarah Johnson</h4>
-      </div>
-
-      <div class="testi-card highlight">
-        <div class="quote-icon">❝</div>
-        <p>"Professional, creative, and fast! Ali made our brand look amazing online."</p>
-        <h4>- David Brown</h4>
-      </div>
-
-      <div class="testi-card">
-        <div class="quote-icon">❝</div>
-        <p>"Ali’s WordPress skills are top-notch. The website is easy to manage and looks stunning."</p>
-        <h4>- Emily White</h4>
-      </div>
-
-      <div class="testi-card highlight">
-        <div class="quote-icon">❝</div>
-        <p>"A fantastic developer and designer! Ali brings ideas to life beautifully."</p>
-        <h4>- Michael Lee</h4>
-      </div>
+      <div class="testi-card"><div class="quote-icon">❝</div><p>"Ali transformed our website with a modern, clean design. Our traffic increased dramatically!"</p><h4>- Sarah Johnson</h4></div>
+      <div class="testi-card highlight"><div class="quote-icon">❝</div><p>"Professional, creative, and fast! Ali made our brand look amazing online."</p><h4>- David Brown</h4></div>
+      <div class="testi-card"><div class="quote-icon">❝</div><p>"Ali’s WordPress skills are top-notch. The website is easy to manage and looks stunning."</p><h4>- Emily White</h4></div>
+      <div class="testi-card highlight"><div class="quote-icon">❝</div><p>"A fantastic developer and designer! Ali brings ideas to life beautifully."</p><h4>- Michael Lee</h4></div>
     </div>
   </div>
 </section>
+
+<!-- FUN FACTS -->
 <section class="fun-facts">
   <div class="container">
     <span class="section-tag">Achievements</span>
     <h2>Numbers That <span>Speak</span></h2>
-
     <div class="facts-grid">
-      <div class="fact-card">
-        <div class="icon">👥</div>
-        <h3 class="counter" data-target="50">0</h3>
-        <p>Happy Clients</p>
-      </div>
-
-      <div class="fact-card highlight">
-        <div class="icon">💻</div>
-        <h3 class="counter" data-target="120">0</h3>
-        <p>Projects Completed</p>
-      </div>
-
-      <div class="fact-card">
-        <div class="icon">⏳</div>
-        <h3 class="counter" data-target="5">0</h3>
-        <p>Years Experience</p>
-      </div>
-
-      <div class="fact-card highlight">
-        <div class="icon">🏆</div>
-        <h3 class="counter" data-target="10">0</h3>
-        <p>Awards & Recognitions</p>
-      </div>
+      <div class="fact-card"><div class="icon">👥</div><h3 class="counter" data-target="50">0</h3><p>Happy Clients</p></div>
+      <div class="fact-card highlight"><div class="icon">💻</div><h3 class="counter" data-target="120">0</h3><p>Projects Completed</p></div>
+      <div class="fact-card"><div class="icon">⏳</div><h3 class="counter" data-target="5">0</h3><p>Years Experience</p></div>
+      <div class="fact-card highlight"><div class="icon">🏆</div><h3 class="counter" data-target="10">0</h3><p>Awards & Recognitions</p></div>
     </div>
   </div>
 </section>
 
-
-
-
-
-
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-wrapper">
-
-    <!-- Left: Brand -->
     <div class="footer-brand">
       <h2>Ali Abdi</h2>
-      <p>
-        I design and build modern websites, creative brand visuals,
-        and powerful digital experiences that help people grow online.
-      </p>
+      <p>I design and build modern websites, creative brand visuals, and powerful digital experiences that help people grow online.</p>
     </div>
-
-    <!-- Center: Navigation -->
     <div class="footer-nav">
       <h4>Explore</h4>
       <a href="#hero">Home</a>
@@ -945,13 +769,10 @@ nav ul li a.active{
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-
-    <!-- Right: Contact -->
     <div class="footer-contact">
       <h4>Let’s Talk</h4>
       <p>Email: <span>ali@example.com</span></p>
       <p>Available for freelance & projects</p>
-
       <div class="footer-social">
         <a href="#">🌐</a>
         <a href="#">💼</a>
@@ -959,63 +780,39 @@ nav ul li a.active{
         <a href="#">✉️</a>
       </div>
     </div>
-
   </div>
-
-  <div class="footer-bottom">
-    © 2025 Ali Abdi — Designed & Built with Passion
-  </div>
+  <div class="footer-bottom">© 2025 Ali Abdi — Designed & Built with Passion</div>
 </footer>
 
 <script>
 const testiCards = document.querySelectorAll('.testi-card');
-
 function revealTestimonials() {
   testiCards.forEach(card => {
     const cardTop = card.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-    if(cardTop < windowHeight - 100){
-      card.classList.add('show');
-    }
+    if(cardTop < windowHeight - 100){ card.classList.add('show'); }
   });
 }
-
 window.addEventListener('scroll', revealTestimonials);
 window.addEventListener('load', revealTestimonials);
-</script>
 
-<script>
 const factCards = document.querySelectorAll('.fact-card');
-
 function revealFacts() {
   factCards.forEach(card => {
     const top = card.getBoundingClientRect().top;
     const height = window.innerHeight;
-    if(top < height - 100){
-      if(!card.classList.contains('show')){
-        card.classList.add('show');
-
-        const counter = card.querySelector('.counter');
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const duration = 2000;
-        const stepTime = Math.abs(Math.floor(duration / target));
-
-        const updateCounter = () => {
-          count++;
-          counter.textContent = count;
-          if(count < target){
-            setTimeout(updateCounter, stepTime);
-          } else {
-            counter.textContent = target;
-          }
-        }
-        updateCounter();
-      }
+    if(top < height - 100 && !card.classList.contains('show')){
+      card.classList.add('show');
+      const counter = card.querySelector('.counter');
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const duration = 2000;
+      const stepTime = Math.abs(Math.floor(duration / target));
+      const updateCounter = () => { count++; counter.textContent = count; if(count < target){ setTimeout(updateCounter, stepTime); } else { counter.textContent = target; } }
+      updateCounter();
     }
   });
 }
-
 window.addEventListener('scroll', revealFacts);
 window.addEventListener('load', revealFacts);
 </script>
